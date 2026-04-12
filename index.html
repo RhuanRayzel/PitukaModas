@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pituka Modas</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(135deg, #000, #333);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      background: white;
+      padding: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    h2 { margin-bottom: 15px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: #fafafa;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #000;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    footer {
+      background: #000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .info { line-height: 1.8; }
+
+    .review {
+      border-top: 1px solid #ddd;
+      padding: 10px 0;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Pituka Modas</h1>
+  <p>Moda feminina com estilo, elegancia e qualidade</p>
+</header>
+
+<nav>
+  <a href="#produtos">Produtos</a>
+  <a href="#info">Informacoes</a>
+  <a href="#avaliacoes">Avaliacoes</a>
+  <a href="#contato">Contato</a>
+</nav>
+
+<div class="container">
+
+  <!-- PRODUTOS -->
+  <div class="card" id="produtos">
+    <h2>Destaques</h2>
+
+    <div class="grid">
+
+      <div class="product">
+        <img src="imagens/Vestido.png">
+        <p><strong>Vestido Midi Elegance Estampa Soft 2026</strong></p>
+        <p>R$ 79,90</p>
+        <a class="btn" href="https://wa.me/5571987988852?text=Ola quero comprar o Vestido Elegante por 79,90" target="_blank">
+          Comprar agora
+        </a>
+      </div>
+
+      <div class="product">
+        <img src="imagens/Conjunto.jpg">
+        <p><strong>Conjunto Verão Luxo Laranja Sunset 2026</strong></p>
+        <p>R$ 99,90</p>
+        <a class="btn" href="https://wa.me/5571987988852?text=Ola quero comprar o Conjunto Feminino por 99,90" target="_blank">
+          Comprar agora
+        </a>
+      </div>
+
+      <div class="product">
+        <img src="imagens/Blusa.png">
+        <p><strong>Blusa Premium Elegance Decote Charm 2026</strong></p>
+        <p>R$ 49,90</p>
+        <a class="btn" href="https://wa.me/5571987988852?text=Ola quero comprar a Blusa Moderna por 49,90" target="_blank">
+          Comprar agora
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- INFORMACOES -->
+  <div class="card" id="info">
+    <h2>Informacoes</h2>
+    <div class="info">
+      Endereco: Avenida Engenheiro Raymundo Carlos Nery, Cajazeiras 10, Salvador - BA<br>
+      Horario: 09:00 as 18:30<br>
+      Telefone: (71) 3238-9851<br>
+      Servicos: Entrega disponivel e visita rapida<br>
+      Pagamentos: Cartao de credito e debito; Dinheiro
+    </div>
+  </div>
+
+  <!-- AVALIACOES -->
+  <div class="card" id="avaliacoes">
+    <h2>Avaliacoes</h2>
+    <p>Nota: 4.7 (3 avaliacoes)</p>
+
+    <div class="review">
+      <strong>J Luis</strong><br>5 estrelas<br>Bom
+    </div>
+
+    <div class="review">
+      <strong>Alex Guedes</strong><br>5 estrelas
+    </div>
+
+    <div class="review">
+      <strong>Pituka Matos</strong><br>5 estrelas
+    </div>
+  </div>
+
+  <!-- CONTATO -->
+  <div class="card" id="contato">
+    <h2>Contato</h2>
+    <a class="btn" href="https://wa.me/5571987988852?text=Ola vim pelo site e quero mais informacoes" target="_blank">
+      Falar no WhatsApp
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  <p>� 2026 Pituka Modas - Todos os direitos reservados</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/5571987988852" target="_blank">
+  WA
+</a>
+
+</body>
+</html>
